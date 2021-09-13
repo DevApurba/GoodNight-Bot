@@ -1,0 +1,1 @@
+worker: java -jar build/libs/GoodNightBot-1.0-all.jar
