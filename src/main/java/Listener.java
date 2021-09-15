@@ -17,7 +17,7 @@ public class Listener extends ListenerAdapter {
     public void onReady(@NotNull ReadyEvent event) {
         super.onReady(event);
         ZonedDateTime time = ZonedDateTime.now(ZoneId.of("Asia/Kolkata"));
-        ZonedDateTime messageTime = time.withHour(20).withMinute(30).withSecond(0);
+        ZonedDateTime messageTime = time.withHour(22).withMinute(0).withSecond(0);
 
         Duration durationUntilFirstLesson = Duration.between(time, messageTime);
         long initialDelayFirstMessage= durationUntilFirstLesson.getSeconds();
